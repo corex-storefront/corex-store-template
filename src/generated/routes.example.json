@@ -1,0 +1,43 @@
+{
+  "routes": [
+    {
+      "path": "/iniciar-sesion",
+      "component": "Sign",
+      "content": false
+    },
+    {
+      "path": "/registro",
+      "component": "Sign",
+      "content": false
+    },
+    {
+      "path": "/recuperar-acceso",
+      "component": "Sign",
+      "content": false
+    },
+    {
+      "path": "/mi-cuenta",
+      "component": "Account",
+      "content": false
+    },
+    {
+      "path": "/carrito",
+      "component": "Account",
+      "content": false
+    },
+    {
+      "path": "/busqueda/:query?",
+      "component": "Search",
+      "content": false
+    },
+    {
+      "path": "/:category/:family/:line/:productName/:productID",
+      "component": "PDP",
+      "content": false
+    },
+    {
+      "component": "Content",
+      "content": true
+    }
+  ]
+}

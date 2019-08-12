@@ -1,10 +1,22 @@
+import App from './App';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import environment from './environment';
+import { Router } from 'react-router-dom';
+import { createBrowserHistory } from 'history';
 import * as serviceWorker from './serviceWorker';
+import { RelayEnvironmentProvider } from 'relay-hooks';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const history = createBrowserHistory();
+
+ReactDOM.render(
+  <RelayEnvironmentProvider environment={environment}>
+    <Router history={history}>
+      <App history={history} />
+    </Router>
+  </RelayEnvironmentProvider>,
+  document.getElementById('root'),
+);
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

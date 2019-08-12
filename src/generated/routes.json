@@ -1,0 +1,23 @@
+{
+  "routes": [
+    {
+      "path": "/carrito",
+      "component": "Account",
+      "content": false
+    },
+    {
+      "path": "/busqueda/:query?",
+      "component": "Search",
+      "content": false
+    },
+    {
+      "path": "/:category/:family/:line/:productName/:productID",
+      "component": "PDP",
+      "content": false
+    },
+    {
+      "component": "Content",
+      "content": true
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "projects": {
+    "corex": {
+      "schemaPath": "schema.graphql",
+      "extensions": {
+        "endpoints": {
+          "default": "https://www.corex.app/_graphql?db=default"
+        }
+      }
+    }
+  }
+}
