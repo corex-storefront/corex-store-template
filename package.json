@@ -4,22 +4,18 @@
   "proxy": "https://www.corex.app/",
   "private": true,
   "dependencies": {
-    "query-string": "^6.8.2",
+    "corex-store-interface": "^0.1.1",
+    "node-sass": "^4.12.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
-    "react-relay": "^5.0.0",
-    "react-router-dom": "^5.0.1",
     "react-scripts": "3.1.0",
-    "relay-hooks": "^1.2.4",
-    "usedevice": "^1.0.18"
+    "tachyons-sass": "^4.9.5"
   },
   "scripts": {
-    "schema": "graphql get-schema",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "relay": "relay-compiler --src ./src --schema ./schema.graphql --watch"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -37,8 +33,6 @@
     ]
   },
   "devDependencies": {
-    "babel-plugin-relay": "^5.0.0",
-    "graphql": "^14.4.2",
-    "relay-compiler": "^5.0.0"
+    "graphql": "^14.4.2"
   }
 }

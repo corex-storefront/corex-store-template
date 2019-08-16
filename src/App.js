@@ -1,36 +1,20 @@
-import React from 'react';
-import useDevice from 'usedevice';
-import Store from './views/Store';
-import { Route, Switch } from 'react-router-dom';
+import React, { Suspense } from 'react';
+import interfaces from './interfaces';
+import manifest from './generated/manifest.json';
+import StoreInterface from 'corex-store-interface';
 
-/**
- * App Component
- *
- * @name App
- * @description Componente principal de la tienda
- *
- * @param {Object} params Props del componente React
- * @param {String} params.history El objeto para interactuar con las rutas/urls (history) del navegador
- *
- * @example
- *
- *      <App history={history} />
- *
- * @returns {React.Component}
- */
-
-const App = ({ history = null }) => {
-  const device = useDevice();
-
+const App = () => {
   return (
-    <Switch>
-      <Route
-        path='/:category?/:family?/:line?/:productName?/:productID?'
-        render={(props) => {
-          return <Store {...props} history={history} device={device} />;
-        }}
-      />
-    </Switch>
+    <StoreInterface
+      manifest={manifest}
+      render={(props) => {
+        return (
+          <Suspense fallback={<div>Loading</div>}>
+            <interfaces.header interfaces={manifest.interfaces} {...props} />
+          </Suspense>
+        );
+      }}
+    />
   );
 };
 
