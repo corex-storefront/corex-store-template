@@ -11,6 +11,7 @@ const App = () => {
         return (
           <Suspense fallback={<div>Loading</div>}>
             <interfaces.header interfaces={manifest.interfaces} {...props} />
+            <interfaces.template interfaces={manifest.interfaces} {...props} />
           </Suspense>
         );
       }}

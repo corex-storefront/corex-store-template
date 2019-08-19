@@ -1,3 +1,4 @@
 import header from './header';
+import template from './template';
 
-export default { header };
+export default { header, template };

@@ -28,7 +28,7 @@ const HeaderSimple = (props) => {
   const toggleMenu = () => setMenuVisibility((menuVisibility) => !menuVisibility);
 
   return (
-    <header className='pv2 ph4 sticky-0 bg-main avenir f4'>
+    <header className='pv2 ph4 sticky-0 bg-base--inverted c-on-base--inverted avenir f4'>
       <div id={styles.mainHeaderBar} className='flex items-center'>
         {menuVisibility && (
           <div id={styles.overlay}>

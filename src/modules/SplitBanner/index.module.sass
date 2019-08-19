@@ -1,0 +1,48 @@
+.splitBanner
+  &.tablet
+    .text
+      font-size: 2.5rem
+    .image
+      height: 400px
+  &.phone
+    .text
+      font-size: 2.2rem
+    .content
+      flex-direction: column
+      .image
+        height: 400px
+      .link
+        width: 100%
+
+.content
+  display: flex
+
+.image
+  position: relative
+  box-sizing: border-box
+  height: 600px
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+    object-position: center center
+
+.link
+  text-decoration: none
+  width: 50%
+
+.text
+  font-family: "BentonSansExCompBold",Arial,Helvetica,sans-serif
+  letter-spacing: 0.015em
+  font-size: 3.5rem
+  padding-bottom: 10px
+
+.callToAction
+  display: flex
+  width: 100%
+  height: 100%
+  flex-direction: column
+  padding: 30px
+  position: absolute
+  top: 0
+  left: 0
