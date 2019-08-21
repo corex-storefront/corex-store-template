@@ -10,7 +10,7 @@
   },
   "dependencies": {},
   "interfaces": {
-    "header": "header-simple"
+    "header": "header"
   },
   "routes": [
     {
