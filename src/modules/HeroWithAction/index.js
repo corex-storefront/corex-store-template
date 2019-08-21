@@ -51,7 +51,7 @@ const HeroWithAction = (props) => {
                 width={window.innerWidth}
                 height={460}
                 src={isPhone && mobileImage.value ? mobileImage.value : desktopImage.value}
-                alt='Hero'
+                alt="Hero"
               />
             </div>
             <div
@@ -85,7 +85,7 @@ const HeroWithAction = (props) => {
                 styles.sameImage}`}>
               <img
                 src={isPhone && mobileImage.value ? mobileImage.value : desktopImage.value}
-                alt='Hero'
+                alt="Hero"
               />
             </div>
           </Link>

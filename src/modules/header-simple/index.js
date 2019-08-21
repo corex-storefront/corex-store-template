@@ -28,8 +28,8 @@ const HeaderSimple = (props) => {
   const toggleMenu = () => setMenuVisibility((menuVisibility) => !menuVisibility);
 
   return (
-    <header className='pv2 ph4 sticky-0 bg-success c-on-base--inverted avenir f4'>
-      <div id={styles.mainHeaderBar} className='flex items-center'>
+    <header className="pv2 ph4 sticky-0 bg-success c-on-base--inverted avenir f4">
+      <div id={styles.mainHeaderBar} className="flex items-center">
         {menuVisibility && (
           <div id={styles.overlay}>
             <Menu />
@@ -42,14 +42,14 @@ const HeaderSimple = (props) => {
             <div>Comprar por</div>
             <div>
               <span>Departamento</span>
-              <i className='material-icons'>keyboard_arrow_down</i>
+              <i className="material-icons">keyboard_arrow_down</i>
             </div>
           </div>
         )}
         <Cart />
         {screenSize !== 'phone' && (
           <div id={styles.userTrigger}>
-            <i className='material-icons'>person</i>
+            <i className="material-icons">person</i>
             <MenuAccount />
           </div>
         )}

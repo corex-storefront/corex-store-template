@@ -41,7 +41,7 @@ const SplitBanner = (props) => {
       <div className={styles.content}>
         <Link to={linkLeft.value} className={styles.link}>
           <div className={styles.image}>
-            <img src={imageLeft.value} alt='' />
+            <img src={imageLeft.value} alt="" />
             {textLeft.value && (
               <div
                 className={styles.callToAction}
@@ -65,7 +65,7 @@ const SplitBanner = (props) => {
         </Link>
         <Link to={linkRight.value} className={styles.link}>
           <div className={styles.image}>
-            <img src={imageRight.value} alt='' />
+            <img src={imageRight.value} alt="" />
             {textRight.value && (
               <div
                 className={styles.callToAction}
