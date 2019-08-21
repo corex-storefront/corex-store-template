@@ -12,7 +12,9 @@ const Header = () => {
   return (
     <header className="h4 mw-100 helvetica">
       <div className="w-100 pv4 center flex items-center">
-        {links.map(HeaderLink)}
+        {links.map((link, index) => (
+          <HeaderLink key={index} {...link} />
+        ))}
       </div>
     </header>
   );
