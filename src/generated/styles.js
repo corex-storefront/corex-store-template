@@ -121,6 +121,7 @@ export default {
       'muted-5': '#f2f4f5',
     },
     text: {
+      primary: '#000',
       'action-primary': '#134cd8',
       'action-secondary': '#eef3f7',
       link: '#134cd8',
