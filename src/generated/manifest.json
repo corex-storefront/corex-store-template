@@ -10,7 +10,8 @@
   },
   "dependencies": {},
   "interfaces": {
-    "header": "header-simple"
+    "header": "header",
+    "video": "video"
   },
   "routes": [
     {

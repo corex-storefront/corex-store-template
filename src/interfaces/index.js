@@ -1,4 +1,4 @@
-import header from './header';
-import template from './template';
+import Header from './header';
+import Template from './template';
 
-export default { header, template };
+export { Header, Template };

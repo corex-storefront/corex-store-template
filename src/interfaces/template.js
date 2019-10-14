@@ -9,7 +9,7 @@ function ModuleContainer({ viewer, ...props }) {
         <Suspense
           key={cube.id}
           fallback={
-            <div className='bg-black-10' style={{ height: '200px' }}>
+            <div className="bg-black-10" style={{ height: '200px' }}>
               Loading {cube.cubeId}
             </div>
           }>

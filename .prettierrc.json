@@ -3,9 +3,9 @@
   "jsxBracketSameLine": true,
   "trailingComma": "all",
   "bracketSpacing": true,
-  "jsxSingleQuote": true,
+  "jsxSingleQuote": false,
   "arrowParens": "always",
-  "printWidth": 100,
+  "printWidth": 80,
   "useTabs": false,
   "semi": true
 }
